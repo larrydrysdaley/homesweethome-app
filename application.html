@@ -1,0 +1,47 @@
+Sure, here's a simple HTML form for a home application with the requested fields:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Application Form</title>
+</head>
+<body>
+    <h2>Home Application Form</h2>
+    <form action="https://example.com" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" required><br>
+        
+        <label for="beds">Bed Selection:</label><br>
+        <select id="beds" name="beds">
+            <option value="1">1 Bed</option>
+            <option value="2">2 Beds</option>
+            <option value="3">3 Beds</option>
+            <option value="4">4 Beds</option>
+            <option value="5">5 Beds</option>
+        </select><br>
+        
+        <label for="baths">Bath Selection:</label><br>
+        <select id="baths" name="baths">
+            <option value="1">1 Bath</option>
+            <option value="1.5">1.5 Baths</option>
+            <option value="2">2 Baths</option>
+            <option value="2.5">2.5 Baths</option>
+            <option value="3">3 Baths</option>
+        </select><br>
+        
+        <label for="price">Price:</label><br>
+        <input type="text" id="price" name="price" required><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+```
+
+This form includes fields for Name, Address, Bed Selection, Bath Selection, and Price. When the form is submitted, it will send the results to `example.com`. Remember to replace `"https://example.com"` with the actual URL where you want the form data to be submitted.
