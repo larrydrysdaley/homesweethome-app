@@ -1,47 +1,78 @@
-Sure, here's a simple HTML form for a home application with the requested fields:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Application Form</title>
-</head>
-<body>
-    <h2>Home Application Form</h2>
-    <form action="https://example.com" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        
-        <label for="address">Address:</label><br>
-        <input type="text" id="address" name="address" required><br>
-        
-        <label for="beds">Bed Selection:</label><br>
-        <select id="beds" name="beds">
-            <option value="1">1 Bed</option>
-            <option value="2">2 Beds</option>
-            <option value="3">3 Beds</option>
-            <option value="4">4 Beds</option>
-            <option value="5">5 Beds</option>
-        </select><br>
-        
-        <label for="baths">Bath Selection:</label><br>
-        <select id="baths" name="baths">
-            <option value="1">1 Bath</option>
-            <option value="1.5">1.5 Baths</option>
-            <option value="2">2 Baths</option>
-            <option value="2.5">2.5 Baths</option>
-            <option value="3">3 Baths</option>
-        </select><br>
-        
-        <label for="price">Price:</label><br>
-        <input type="text" id="price" name="price" required><br>
-        
-        <input type="submit" value="Submit">
-    </form>
-</body>
-</html>
-```
 
-This form includes fields for Name, Address, Bed Selection, Bath Selection, and Price. When the form is submitted, it will send the results to `example.com`. Remember to replace `"https://example.com"` with the actual URL where you want the form data to be submitted.
+<head>
+    <!-- Your head content remains unchanged -->
+</head>
+
+<body>
+    <!-- Your existing header content -->
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner and Navbar content remain unchanged -->
+
+        <!-- Header content remains unchanged -->
+
+        <!-- Search content remains unchanged -->
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <!-- Existing contact section content -->
+
+                <!-- Form Start -->
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="card wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4">Submit Your Details</h2>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="full-name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="full-name" placeholder="Enter your full name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phone-number" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control" id="phone-number" placeholder="Enter your phone number">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="address" class="form-label">Address</label>
+                                        <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="occupants" class="form-label">Number of Occupants</label>
+                                        <input type="number" class="form-control" id="occupants" placeholder="Enter number of occupants">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="years-lived" class="form-label">How Long Do You Plan to Live (in years)</label>
+                                        <input type="number" class="form-control" id="years-lived" placeholder="Enter number of years">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="signature" class="form-label">Signature</label>
+                                        <input type="text" class="form-control" id="signature" placeholder="Your signature">
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form End -->
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer content remains unchanged -->
+
+        <!-- Back to Top content remains unchanged -->
+    </div>
+
+    <!-- JavaScript Libraries and Template Javascript remain unchanged -->
+</body>
+
+</html>
