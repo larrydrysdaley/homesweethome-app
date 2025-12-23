@@ -4,7 +4,7 @@ export const siteConfig = {
     description: "Modern luxury living for your perfect lifestyle.",
     contact: {
         email: "contact@homesweethome.com",
-        phone: "+1 (555) 123-4567",
+        phone: "517-234-2890",
         address: "123 Luxury Lane, Beverly Hills, CA 90210"
     },
     colors: {
