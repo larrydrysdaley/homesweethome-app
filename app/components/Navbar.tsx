@@ -53,13 +53,7 @@ export default function Navbar() {
                             Contact
                             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
                         </Link>
-                        <Link
-                            href="/admin"
-                            className="relative group py-2 text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
-                        >
-                            Admin
-                            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
-                        </Link>
+
                         <Link
                             href="/application"
                             className="btn-primary px-6 py-2.5 rounded-lg font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
@@ -99,9 +93,7 @@ export default function Navbar() {
                             <Link href="/contact" className="px-4 py-2 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors font-medium">
                                 Contact
                             </Link>
-                            <Link href="/admin" className="px-4 py-2 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors font-medium">
-                                Admin
-                            </Link>
+
                             <Link href="/application" className="mx-4 btn-primary px-6 py-2.5 rounded-lg font-semibold text-center">
                                 Apply Now
                             </Link>
