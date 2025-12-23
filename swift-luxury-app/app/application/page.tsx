@@ -4,6 +4,7 @@ import { useState, FormEvent } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import PageHeader from '../components/PageHeader';
+import { siteConfig } from '../lib/siteConfig';
 
 export default function ApplicationPage() {
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -42,7 +43,7 @@ export default function ApplicationPage() {
                     inline: true
                 })),
                 timestamp: new Date().toISOString(),
-                footer: { text: 'Swift Luxury Homes Application System' }
+                footer: { text: `${siteConfig.name} Application System` }
             }]
         };
 

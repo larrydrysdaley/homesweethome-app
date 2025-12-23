@@ -1,11 +1,12 @@
-# Swift Luxury Homes - Modern Web Application
+# Home Sweet Home - Modern Web Application
 
-A modern, premium web application for Swift Luxury Homes built with Next.js, TypeScript, and Tailwind CSS.
+A modern, premium web application for property rentals built with Next.js, TypeScript, and Tailwind CSS.
 
 ## 🚀 Features
 
 - **Modern Design**: Glassmorphism effects, smooth animations, and gradient accents
 - **Responsive**: Fully responsive design that works on all devices
+- **White Label Ready**: Easily configurable brand details via a single config file
 - **Application Form**: Integrated rental application form with Discord webhook
 - **SEO Optimized**: Built-in SEO best practices with Next.js metadata
 - **Fast Performance**: Optimized for Vercel deployment
@@ -25,7 +26,7 @@ A modern, premium web application for Swift Luxury Homes built with Next.js, Typ
 1. Go to your Discord server
 2. Navigate to: **Server Settings > Integrations > Webhooks**
 3. Click **"New Webhook"**
-4. Name it "Swift Luxury Homes Applications"
+4. Name it "Rental Applications"
 5. Select the channel where you want to receive applications
 6. Click **"Copy Webhook URL"**
 
@@ -83,11 +84,37 @@ A modern, premium web application for Swift Luxury Homes built with Next.js, Typ
    vercel env add NEXT_PUBLIC_DISCORD_WEBHOOK_URL
    ```
 
+## 🎨 Branding & Configuration
+
+This application is designed to be easily white-labeled. You can change the site name, description, contact details, and more in a single file.
+
+**Configuration File:** `app/lib/siteConfig.ts`
+
+```typescript
+export const siteConfig = {
+  name: "Home Sweet Home",
+  shortName: "HomeSweetHome",
+  description: "Modern luxury living for your perfect lifestyle.",
+  contact: {
+    email: "contact@homesweethome.com",
+    phone: "+1 (555) 123-4567",
+    address: "123 Luxury Lane, Beverly Hills, CA 90210"
+  },
+  colors: {
+    primary: "blue-600"
+  }
+};
+```
+
+Simply update this file to change the branding across the entire site instantly.
+
 ## 📁 Project Structure
 
 ```
-swift-luxury-app/
+home-sweet-home-app/
 ├── app/
+│   ├── lib/
+│   │   └── siteConfig.ts    # Central branding configuration
 │   ├── components/
 │   │   ├── Navbar.tsx       # Navigation bar
 │   │   └── Footer.tsx       # Footer component
@@ -180,28 +207,13 @@ After deployment, test the application form:
 3. Check your Discord channel for the notification
 4. Verify all data is correctly formatted
 
-## 🐛 Troubleshooting
-
-**Form not submitting:**
-- Check that `NEXT_PUBLIC_DISCORD_WEBHOOK_URL` is set correctly
-- Verify the webhook URL is valid in Discord
-- Check browser console for errors
-
-**Styling issues:**
-- Clear browser cache
-- Rebuild the project: `npm run build`
-
-**Deployment errors:**
-- Ensure all dependencies are in `package.json`
-- Check Vercel build logs for specific errors
-
 ## 📄 License
 
-This project is private and proprietary to Swift Luxury Homes.
+This project is private and proprietary.
 
 ## 🤝 Support
 
-For support, email info@swiftluxuryhomes.com or call +1 808 437 5965.
+For support, email contact@homesweethome.com.
 
 ---
 

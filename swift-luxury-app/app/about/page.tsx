@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import PageHeader from '../components/PageHeader';
 import Image from 'next/image';
+import { siteConfig } from '../lib/siteConfig';
 
 export default function AboutPage() {
     return (
@@ -25,7 +26,7 @@ export default function AboutPage() {
                                     Excellence in <span className="text-blue-600">Luxury Housing</span>
                                 </h2>
                                 <p className="text-xl text-gray-600 leading-relaxed">
-                                    Swift Luxury Homes was founded with a simple yet ambitious goal: to provide the most exceptional living experiences in the most beautiful locations.
+                                    {siteConfig.name} was founded with a simple yet ambitious goal: to provide the most exceptional living experiences in the most beautiful locations.
                                 </p>
                                 <p className="text-lg text-gray-600 leading-relaxed">
                                     We specialize in premium rentals that combine breathtaking views with modern amenities and unparalleled service. Our team of local experts is dedicated to helping you find not just a house, but a home that reflects your lifestyle.

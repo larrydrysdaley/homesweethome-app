@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import { siteConfig } from "./lib/siteConfig";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Swift Luxury Homes - Premium Property Rentals",
-  description: "Discover your dream luxury home with Swift Luxury Homes. Premium rental properties in Hawaii and beyond.",
+  title: `${siteConfig.name} - Premium Property Rentals`,
+  description: siteConfig.description,
   keywords: "luxury homes, property rental, real estate, Hawaii properties, premium rentals",
 };
 

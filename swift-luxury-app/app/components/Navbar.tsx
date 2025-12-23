@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
+import { siteConfig } from '../lib/siteConfig';
+
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -13,11 +15,12 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center space-x-3 group">
                         <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 shadow-md">
-                            <span className="text-white font-bold text-2xl">S</span>
+                            <span className="text-white font-bold text-2xl">
+                                {siteConfig.shortName.charAt(0)}
+                            </span>
                         </div>
                         <div className="hidden sm:block">
-                            <span className="text-xl font-bold text-gray-900">Swift Luxury</span>
-                            <span className="text-xl font-light text-gray-600 ml-1">Homes</span>
+                            <span className="text-xl font-bold text-gray-900">{siteConfig.name}</span>
                         </div>
                     </Link>
 
@@ -60,7 +63,7 @@ export default function Navbar() {
                         </Link>
                         <Link
                             href="/application"
-                            className="ml-4 btn-primary px-6 py-2.5 rounded-lg font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
+                            className="btn-primary px-6 py-2.5 rounded-lg font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
                         >
                             Apply Now
                         </Link>
