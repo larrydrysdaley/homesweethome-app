@@ -11,7 +11,8 @@ export default function AdminPage() {
     const [image, setImage] = useState('');
     const [description, setDescription] = useState('');
     const [beds, setBeds] = useState('');
-    const [baths, setBeds] = useState(''); // Typo fix: setBaths
+    const [baths, setBaths] = useState(''); // Typo fix: setBaths
+
     const [sqft, setSqft] = useState('');
 
     const [status, setStatus] = useState('');
